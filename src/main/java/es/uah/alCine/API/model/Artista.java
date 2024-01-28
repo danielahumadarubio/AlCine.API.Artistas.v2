@@ -26,6 +26,17 @@ public class Artista {
     @JoinColumn(name = "ID_TIPO_ARTISTA", nullable = false)
     private TipoArtista tipoArtista;
 
+    @Column(name = "NUM_OSCARS", nullable = true)
+    private Integer numOscars;
+
+    public Integer getnumOscars() {
+        return numOscars;
+    }
+
+    public void setnumOscars(Integer numOscars) {
+        this.numOscars = numOscars;
+    }
+
     public Integer getId() {
         return id;
     }

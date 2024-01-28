@@ -18,6 +18,16 @@ public class ArtistasDto implements Serializable {
     private PaisesDto pais;
     private TiposArtistasDto tipoArtista;
 
+    private Integer numOscars;
+
+    public Integer getnumOscars() {
+        return numOscars;
+    }
+
+    public void setnumOscars(Integer numOscars) {
+        this.numOscars = numOscars;
+    }
+
     public ArtistasDto() {
     }
 

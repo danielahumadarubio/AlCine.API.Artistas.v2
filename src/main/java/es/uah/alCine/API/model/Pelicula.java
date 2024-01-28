@@ -34,6 +34,17 @@ public class Pelicula {
     @Column(name = "PORTADA", length = 250)
     private String portada;
 
+    @Column(name = "NUM_OSCARS", nullable = true)
+    private Integer numOscars;
+
+    public Integer getnumOscars() {
+        return numOscars;
+    }
+
+    public void setnumOscars(Integer numOscars) {
+        this.numOscars = numOscars;
+    }
+
     public Integer getId() {
         return id;
     }
