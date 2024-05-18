@@ -5,6 +5,4 @@ updates:
     schedule:
       interval: "daily" # Frecuencia con la que Dependabot buscará actualizaciones (puede ser daily, weekly, monthly)
     open-pull-requests-limit: 5 # Número máximo de pull requests abiertas por Dependabot
-    commit-message:
-      prefix: "chore"
-      include: "scope"
+   
