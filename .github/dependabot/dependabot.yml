@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # O "yarn" si usas yarn en vez de npm
+    directory: "/" # El directorio donde se encuentra tu archivo package.json
+    schedule:
+      interval: "daily" # Frecuencia con la que Dependabot buscará actualizaciones (puede ser daily, weekly, monthly)
+    open-pull-requests-limit: 5 # Número máximo de pull requests abiertas por Dependabot
+    commit-message:
+      prefix: "chore"
+      include: "scope"
