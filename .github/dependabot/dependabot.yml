@@ -1,8 +1,12 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/" # El directorio donde se encuentra tu archivo package.json
+  - package-ecosystem: "maven"
+    directory: "/" # El directorio donde se encuentra tu archivo pom.xml
     schedule:
       interval: "daily" # Frecuencia con la que Dependabot buscará actualizaciones (puede ser daily, weekly, monthly)
     open-pull-requests-limit: 5 # Número máximo de pull requests abiertas por Dependabot
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
    
